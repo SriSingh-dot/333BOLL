@@ -1,0 +1,416 @@
+DOCTYPE html>
+<html>
+<head>
+<title>BollyyTube</title>
+<style>
+body {
+  background-color: maroon;
+  color: white;
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, maroon, black);
+}
+header h1 {
+  font-size: 60px;
+  color: gold;
+  text-decoration: underline;
+  letter-spacing: 6px;
+  font-family: "Burgues", cursive;
+  text-shadow: 0 0 12px lime;
+}
+header p {
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #f5deb3;
+}
+.genres {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 50px;
+}
+.genre-box {
+  background-color: #3b0000;
+  border: 4px solid gold;
+  border-radius: 15px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.genre-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+}
+.genre-box a {
+  text-decoration: none;
+  color: gold;
+  font-size: 24px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.separator {
+  border-top: 3px solid gold;
+  margin: 50px auto;
+  width: 80%;
+}
+.movie-posters {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+.movie-posters img {
+  width: 220px;
+  height: auto;
+  border: 4px solid gold;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  transition: transform 0.3s;
+}
+.movie-posters img:hover {
+  transform: scale(1.08);
+}
+.genre-section {
+  padding: 50px 80px;
+}
+.genre-section h2 {
+  font-size: 40px;
+  text-align: center;
+  color: gold;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+.movie {
+  background-color: #3b0000;
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-left: 6px solid gold;
+  border-radius: 8px;
+  font-size: 22px;
+  font-family: "Times New Roman", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.movie:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
+.rating {
+  color: gold;
+  border: 2px solid lime;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.back-top {
+  display: block;
+  text-align: right;
+  margin-top: 15px;
+  font-size: 18px;
+  color: gold;
+  text-decoration: none;
+}
+.back-top:hover {
+  color: lime;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 15px;
+  color: gold;
+  margin-top: 40px;
+  border-top: 2px solid gold;
+}
+</style>
+</head>
+<body>
+<header id="top">
+  <h1>BollyyTube</h1>
+  <p>Your Bollywood Movie Advisor – Explore Genres, Discover Classics</p>
+</header>
+
+<section class="genres">
+  <div class="genre-box"><a href="#action">Action</a></div>
+  <div class="genre-box"><a href="#adventure">Adventure</a></div>
+  <div class="genre-box"><a href="#comedy">Comedy</a></div>
+  <div class="genre-box"><a href="#drama">Drama</a></div>
+  <div class="genre-box"><a href="#horror">Horror</a></div>
+  <div class="genre-box"><a href="#romance">Romance</a></div>
+  <div class="genre-box"><a href="#thriller">Thriller</a></div>
+  <div class="genre-box"><a href="#mystery">Mystery</a></div>
+  <div class="genre-box"><a href="#fantasy">Fantasy</a></div>
+  <div class="genre-box"><a href="#scifi">Sci-Fi</a></div>
+  <div class="genre-box"><a href="#crime">Crime / Gangster</a></div>
+  <div class="genre-box"><a href="#historical">Historical</a></div>
+  <div class="genre-box"><a href="#war">War</a></div>
+  <div class="genre-box"><a href="#western">Western</a></div>
+  <div class="genre-box"><a href="#animation">Animation</a></div>
+  <div class="genre-box"><a href="#musical">Musical</a></div>
+</section>
+
+<div class="separator"></div>
+
+<section class="movie-posters">
+  <img src="Ra.one.jpg" alt="Ra.One Poster">
+  <img src="devdas.jpg" alt="Devdas Poster">
+  <img src="missionmangal.jpg" alt="Mission Mangal Poster">
+</section>
+
+<!-- Example for genre: Action -->
+<section id="action" class="genre-section">
+<h2>Action</h2>
+<div class="movie">Sholay <span class="rating">⭐ 9.2</span></div>
+<div class="movie">Singham <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Krrish <span class="rating">⭐ 6.8</span></div>
+<div class="movie">War <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Dhoom <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Dhoom 2 <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Baaghi <span class="rating">⭐ 6.9</span></div>
+<div class="movie">Ghajini <span class="rating">⭐ 7.2</span></div>
+<div class="movie">KGF: Chapter 1 <span class="rating">⭐ 8.2</span></div>
+<div class="movie">Gangs of Wasseypur <span class="rating">⭐ 8.2</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="adventure" class="genre-section">
+<h2>Adventure</h2>
+<div class="movie">Sholay <span class="rating">⭐ 9.2</span></div>
+<div class="movie">Baahubali: The Beginning <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Krrish <span class="rating">⭐ 6.8</span></div>
+<div class="movie">War <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Dhoom <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Dhoom 2 <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Baaghi <span class="rating">⭐ 6.9</span></div>
+<div class="movie">Tanhaji <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Gangs of Wasseypur <span class="rating">⭐ 8.2</span></div>
+<div class="movie">URI: The Surgical Strike <span class="rating">⭐ 7.8</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="comedy" class="genre-section">
+<h2>Comedy</h2>
+<div class="movie">Coolie No. 1 <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Raja Babu <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Haseena Maan Jaayegi <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Golmaal Again <span class="rating">⭐ 6.8</span></div>
+<div class="movie">Secret Superstar <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Sholay <span class="rating">⭐ 9.2</span></div>
+<div class="movie">Delhi Belly <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Padosan <span class="rating">⭐ 7.3</span></div>
+<div class="movie">Andaz Apna Apna <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Chennai Express <span class="rating">⭐ 6.9</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="drama" class="genre-section">
+<h2>Drama</h2>
+<div class="movie">Dilwale Dulhania Le Jayenge <span class="rating">⭐ 8.7</span></div>
+<div class="movie">Kuch Kuch Hota Hai <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Kabhi Khushi Kabhie Gham <span class="rating">⭐ 7.4</span></div>
+<div class="movie">The Lunchbox <span class="rating">⭐ 8.1</span></div>
+<div class="movie">Secret Superstar <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Dangal <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Mother India <span class="rating">⭐ 9.0</span></div>
+<div class="movie">Amar Akbar Anthony <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Barfi! <span class="rating">⭐ 8.2</span></div>
+<div class="movie">3 Idiots <span class="rating">⭐ 8.5</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="horror" class="genre-section">
+<h2>Horror</h2>
+<div class="movie">Raat <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Bhoot <span class="rating">⭐ 6.9</span></div>
+<div class="movie">Phoonk <span class="rating">⭐ 6.2</span></div>
+<div class="movie">Pari <span class="rating">⭐ 6.8</span></div>
+<div class="movie">1920 <span class="rating">⭐ 6.5</span></div>
+<div class="movie">Tumbbad <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Raaz <span class="rating">⭐ 6.7</span></div>
+<div class="movie">Stree <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Bulbbul <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Darna Zaroori Hai <span class="rating">⭐ 6.3</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="romance" class="genre-section">
+<h2>Romance</h2>
+<div class="movie">Dilwale Dulhania Le Jayenge <span class="rating">⭐ 8.7</span></div>
+<div class="movie">Kuch Kuch Hota Hai <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Mohabbatein <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Barfi! <span class="rating">⭐ 8.2</span></div>
+<div class="movie">Aashiqui <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Taal <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Rockstar <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Ajab Prem Ki Ghazab Kahani <span class="rating">⭐ 6.9</span></div>
+<div class="movie">Tum Mile <span class="rating">⭐ 6.7</span></div>
+<div class="movie">Hum Dil De Chuke Sanam <span class="rating">⭐ 7.9</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="thriller" class="genre-section">
+<h2>Thriller</h2>
+<div class="movie">URI: The Surgical Strike <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Gangs of Wasseypur <span class="rating">⭐ 8.2</span></div>
+<div class="movie">Raazi <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Shershaah <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Baby <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Badlapur <span class="rating">⭐ 7.1</span></div>
+<div class="movie">Black Friday <span class="rating">⭐ 7.4</span></div>
+<div class="movie">Once Upon a Time in Mumbaai <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Shootout at Lokhandwala <span class="rating">⭐ 6.9</span></div>
+<div class="movie">Company <span class="rating">⭐ 7.5</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="mystery" class="genre-section">
+<h2>Mystery</h2>
+<div class="movie">Baazigar <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Kahaani <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Talaash <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Andhadhun <span class="rating">⭐ 8.3</span></div>
+<div class="movie">Drishyam <span class="rating">⭐ 7.9</span></div>
+<div class="movie">Badla <span class="rating">⭐ 7.1</span></div>
+<div class="movie">Gumnaam <span class="rating">⭐ 6.8</span></div>
+<div class="movie">Ittefaq <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Murder <span class="rating">⭐ 6.5</span></div>
+<div class="movie">Raat Akeli Hai <span class="rating">⭐ 7.0</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="fantasy" class="genre-section">
+<h2>Fantasy</h2>
+<div class="movie">Krrish <span class="rating">⭐ 6.8</span></div>
+<div class="movie">Baahubali: The Beginning <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Koi… Mil Gaya <span class="rating">⭐ 6.5</span></div>
+<div class="movie">Tumbbad <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Jodhaa Akbar <span class="rating">⭐ 7.5</span></div>
+<div class="movie">PK <span class="rating">⭐ 8.1</span></div>
+<div class="movie">Paheli <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Raanjhanaa <span class="rating">⭐ 7.3</span></div>
+<div class="movie">Barfi! <span class="rating">⭐ 8.2</span></div>
+<div class="movie">Makdee <span class="rating">⭐ 6.8</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="scifi" class="genre-section">
+<h2>Science Fiction (Sci-Fi)</h2>
+<div class="movie">Koi… Mil Gaya <span class="rating">⭐ 6.5</span></div>
+<div class="movie">Krrish <span class="rating">⭐ 6.8</span></div>
+<div class="movie">PK <span class="rating">⭐ 8.1</span></div>
+<div class="movie">Ra.One <span class="rating">⭐ 5.9</span></div>
+<div class="movie">Robot (Enthiran) <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Tikli & Laxmi Bomb <span class="rating">⭐ 6.7</span></div>
+<div class="movie">Alita: Battle Angel <span class="rating">⭐ 6.8</span></div>
+<div class="movie">Cargo <span class="rating">⭐ 6.9</span></div>
+<div class="movie">Mission Mangal <span class="rating">⭐ 7.1</span></div>
+<div class="movie">Love Story 2050 <span class="rating">⭐ 5.5</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="crime" class="genre-section">
+<h2>Crime / Gangster</h2>
+<div class="movie">Satya <span class="rating">⭐ 8.5</span></div>
+<div class="movie">Gangs of Wasseypur <span class="rating">⭐ 8.2</span></div>
+<div class="movie">Company <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Once Upon a Time in Mumbaai <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Shootout at Lokhandwala <span class="rating">⭐ 6.9</span></div>
+<div class="movie">Black Friday <span class="rating">⭐ 7.4</span></div>
+<div class="movie">Don <span class="rating">⭐ 7.1</span></div>
+<div class="movie">Badlapur <span class="rating">⭐ 7.1</span></div>
+<div class="movie">Agneepath <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Kshatriya <span class="rating">⭐ 6.8</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="historical" class="genre-section">
+<h2>Historical</h2>
+<div class="movie">Tanhaji <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Kesari <span class="rating">⭐ 7.4</span></div>
+<div class="movie">LOC: Kargil <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Border <span class="rating">⭐ 7.1</span></div>
+<div class="movie">Raazi <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Mangal Pandey: The Rising <span class="rating">⭐ 6.8</span></div>
+<div class="movie">Lagaan <span class="rating">⭐ 8.1</span></div>
+<div class="movie">Jodhaa Akbar <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Padmaavat <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Manikarnika: The Queen of Jhansi <span class="rating">⭐ 6.9</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="war" class="genre-section">
+<h2>War</h2>
+<div class="movie">Border <span class="rating">⭐ 7.1</span></div>
+<div class="movie">Kesari <span class="rating">⭐ 7.4</span></div>
+<div class="movie">LOC: Kargil <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Raazi <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Shershaah <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Lakshya <span class="rating">⭐ 7.0</span></div>
+<div class="movie">1971 <span class="rating">⭐ 6.9</span></div>
+<div class="movie">Gunjan Saxena: The Kargil Girl <span class="rating">⭐ 6.8</span></div>
+<div class="movie">Haqeeqat <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Subedar Joginder Singh <span class="rating">⭐ 6.8</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="western" class="genre-section">
+<h2>Western</h2>
+<div class="movie">Sholay <span class="rating">⭐ 9.2</span></div>
+<div class="movie">Ganga Jamuna <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Seeta Aur Geeta <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Thugs of Hindostan <span class="rating">⭐ 5.5</span></div>
+<div class="movie">Jodhaa Akbar <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Mardaani 2 <span class="rating">⭐ 6.9</span></div>
+<div class="movie">Sonchiriya <span class="rating">⭐ 7.1</span></div>
+<div class="movie">Paan Singh Tomar <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Rancho (Gangs) <span class="rating">⭐ 6.8</span></div>
+<div class="movie">...Other Western Gems <span class="rating">⭐ 6.5</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="animation" class="genre-section">
+<h2>Animation</h2>
+<div class="movie">Taare Zameen Par <span class="rating">⭐ 8.0</span></div>
+<div class="movie">Hanuman <span class="rating">⭐ 6.5</span></div>
+<div class="movie">Roadside Romeo <span class="rating">⭐ 6.7</span></div>
+<div class="movie">Delhi Safari <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Chota Bheem Series <span class="rating">⭐ 6.8</span></div>
+<div class="movie">Krishna Series <span class="rating">⭐ 6.7</span></div>
+<div class="movie">Other Kids Animation <span class="rating">⭐ 6.5</span></div>
+<div class="movie">Animated Mythology <span class="rating">⭐ 6.8</span></div>
+<div class="movie">Fun Cartoons <span class="rating">⭐ 6.5</span></div>
+<div class="movie">YRF Specials <span class="rating">⭐ 6.6</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<section id="musical" class="genre-section">
+<h2>Musical</h2>
+<div class="movie">Aashiqui <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Taal <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Rockstar <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Secret Superstar <span class="rating">⭐ 7.2</span></div>
+<div class="movie">Lagaan <span class="rating">⭐ 8.1</span></div>
+<div class="movie">Devdas <span class="rating">⭐ 7.0</span></div>
+<div class="movie">Kal Ho Naa Ho <span class="rating">⭐ 7.5</span></div>
+<div class="movie">Dil Se.. <span class="rating">⭐ 7.8</span></div>
+<div class="movie">Bombay <span class="rating">⭐ 7.6</span></div>
+<div class="movie">Phantom India / Anubhav <span class="rating">⭐ 6.9</span></div>
+<a href="#top" class="back-top">⬆ Back to Top</a>
+</section>
+
+<footer>
+Made by Sri - 2025
+</footer>
+</body>
+</html>
+
